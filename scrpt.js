@@ -1,4 +1,3 @@
-// ---- GOOGLE LOGIN ----
 function handleGoogleCredentialResponse(response) {
   // Decodificar JWT (exemplo básico)
   const data = JSON.parse(atob(response.credential.split('.')[1]));
@@ -6,7 +5,6 @@ function handleGoogleCredentialResponse(response) {
   console.log("Dados do Google:", data);
 }
 
-// ---- APPLE LOGIN ----
 AppleID.auth.init({
   clientId: "com.seuapp.web",
   scope: "name email",
