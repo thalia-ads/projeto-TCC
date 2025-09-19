@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site De Recomendação de Jogos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Multiplataforma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
- <h1>Site de Recomendação de Jogos</h1>
- <p> Email</p>
- <p> Senha </p>
- <p> Acessar </p>
 <body>
-    <h2>Ou</h2>
-    <p>logar com o facebook </p>
-    <p>logar com o Google </p>
-    <p>logar com a apple </p>
+  <div class="login-container">
+    <h1>Bem-vindo!</h1>
+    <p>Escolha uma opção para entrar</p>
 
+
+    <form class="login-form">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Senha" required>
+      <button type="submit" class="default-btn">Entrar</button>
+    </form>
+
+    <div class="divider">ou</div>
+
+    <div id="g_id_onload"
+      data-client_id="SUA_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+      data-callback="handleGoogleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
+    <div id="appleid-signin" class="apple-btn" data-type="sign in"></div>
+  </div>
+
+  <script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
