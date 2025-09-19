@@ -1,84 +1,49 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0208bc, #1e00dd);
+  font-family: sans-serif;
+  background: #0019d5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.login-container {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
+.login {
+  background: 
+  #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-  width: 320px;
 }
 
-h1 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-p {
-  margin-bottom: 1rem;
-  color: #666;
-}
-
-.login-form {
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
-.login-form input {
+input, .default {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 6px;
 }
 
-.default-btn {
+.default {
   background: #3b5998;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
+  color: #fff;
   cursor: pointer;
-  font-size: 1rem;
 }
 
-.default-btn:hover {
-  background: #2d4373;
+.btn {
+  display: block;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.divider {
-  margin: 1.5rem 0;
-  color: #999;
-  font-size: 0.9rem;
-  position: relative;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background: #ccc;
-}
-
-.divider::before {
-  left: 0;
-}
-.divider::after {
-  right: 0;
-}
-
-.apple-btn {
-  margin-top: 15px;
-}
-
- 
+.google { background: #0008ff; }
+.facebook { background: #2600ff; }
+.apple { background: #0004ff; }
