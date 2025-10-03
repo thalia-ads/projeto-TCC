@@ -7,6 +7,12 @@ body {
   height: 100vh;
 }
 
+.h2{
+  gap: 100px;
+  text-align: center;
+
+}
+
 .login {
   background: #ebebeb;
   padding: 20px;
@@ -16,6 +22,7 @@ body {
 }
 
 form {
+  color: rgb(16, 71, 164);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -30,13 +37,13 @@ input, .default {
 
 .default {
   background: #0019d5;
-  color: #fff;
+  color: #ebebeb;
   cursor: pointer;
 }
 
 p {
   margin: 15px 0;
-  color: #666;
+  color: #0019d5;
 }
 
 .btn {
